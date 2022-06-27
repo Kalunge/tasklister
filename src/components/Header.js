@@ -1,14 +1,15 @@
 import React from 'react';
 import Button from './Button';
 
-const Header = ({ name }) => {
-  const onClick = () => {
-    console.log('object');
-  };
+const Header = ({ toggleForm, showAddTask }) => {
   return (
     <header className="header">
       <h1>Task Tracker</h1>
-      <Button onClick={onClick} color="green" text="Add" />
+      <Button
+        onClick={toggleForm}
+        color={showAddTask ? 'red' : 'green'}
+        text={showAddTask ? 'close' : 'add'}
+      />
     </header>
   );
 };
