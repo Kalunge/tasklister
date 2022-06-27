@@ -82,9 +82,9 @@ const App = () => {
         />
 
         <Routes>
-          <Route path="/" exact>
-            render ={' '}
-            {(props) => (
+          <Route
+            path="/"
+            element={
               <>
                 {showAddTask && <AddTask onAdd={addTask} />}
 
@@ -98,11 +98,9 @@ const App = () => {
                   'No tasks'
                 )}
               </>
-            )}
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
+            }
+          />
+          <Route path="/about" element={<About />} />
         </Routes>
         <Footer />
       </div>
