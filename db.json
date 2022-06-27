@@ -1,0 +1,28 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "text": "Wife's birthday",
+      "day": "February 4th at 8:30 am",
+      "reminder": false
+    },
+    {
+      "id": 3,
+      "text": "daughter's birthday",
+      "day": "February 4th at 8:30 am",
+      "reminder": true
+    },
+    {
+      "text": "Daughter's birtday",
+      "day": "22 June 2024",
+      "reminder": true,
+      "id": 4
+    },
+    {
+      "text": "Grandie's birthday",
+      "day": "27th May 2025",
+      "reminder": false,
+      "id": 5
+    }
+  ]
+}
